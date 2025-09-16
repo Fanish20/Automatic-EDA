@@ -1,0 +1,1155 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AutoEDA Report - matches.csv</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    h1,h2,h3 { color: #2c3e50; }
+    .section { margin-bottom: 30px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background:#f4f6f8; text-align:left; }
+    img { max-width: 100%; height: auto; border: 1px solid #eee; margin: 8px 0; }
+    .small { font-size: 0.9em; color: #666; }
+    .code { background:#f7f9fb; padding:6px; border-radius:4px; font-family:monospace; }
+  </style>
+</head>
+<body>
+  <h1>AutoEDA Report - matches.csv</h1>
+  <p class="small">Generated: 2025-09-16 02:37 UTC</p>
+
+  <div class="section">
+    <h2>Dataset overview</h2>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>metric</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rows</td>
+      <td>1095.000</td>
+    </tr>
+    <tr>
+      <td>Columns</td>
+      <td>20.000</td>
+    </tr>
+    <tr>
+      <td>Memory (MB)</td>
+      <td>1.135</td>
+    </tr>
+    <tr>
+      <td>Num missing cells</td>
+      <td>1160.000</td>
+    </tr>
+    <tr>
+      <td>Duplicate rows</td>
+      <td>0.000</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="section">
+    <h2>Columns summary</h2>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>column</th>
+      <th>dtype</th>
+      <th>n_missing</th>
+      <th>n_unique</th>
+      <th>sample_values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>int64</td>
+      <td>0</td>
+      <td>1095</td>
+      <td>335982, 335983, 335984</td>
+    </tr>
+    <tr>
+      <td>season</td>
+      <td>object</td>
+      <td>0</td>
+      <td>17</td>
+      <td>2007/08, 2007/08, 2007/08</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>object</td>
+      <td>51</td>
+      <td>36</td>
+      <td>Bangalore, Chandigarh, Delhi</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>object</td>
+      <td>0</td>
+      <td>823</td>
+      <td>2008-04-18, 2008-04-19, 2008-04-19</td>
+    </tr>
+    <tr>
+      <td>match_type</td>
+      <td>object</td>
+      <td>0</td>
+      <td>8</td>
+      <td>League, League, League</td>
+    </tr>
+    <tr>
+      <td>player_of_match</td>
+      <td>object</td>
+      <td>5</td>
+      <td>291</td>
+      <td>BB McCullum, MEK Hussey, MF Maharoof</td>
+    </tr>
+    <tr>
+      <td>venue</td>
+      <td>object</td>
+      <td>0</td>
+      <td>58</td>
+      <td>M Chinnaswamy Stadium, Punjab Cricket Association Stadium, Mohali, Feroz Shah Kotla</td>
+    </tr>
+    <tr>
+      <td>team1</td>
+      <td>object</td>
+      <td>0</td>
+      <td>19</td>
+      <td>Royal Challengers Bangalore, Kings XI Punjab, Delhi Daredevils</td>
+    </tr>
+    <tr>
+      <td>team2</td>
+      <td>object</td>
+      <td>0</td>
+      <td>19</td>
+      <td>Kolkata Knight Riders, Chennai Super Kings, Rajasthan Royals</td>
+    </tr>
+    <tr>
+      <td>toss_winner</td>
+      <td>object</td>
+      <td>0</td>
+      <td>19</td>
+      <td>Royal Challengers Bangalore, Chennai Super Kings, Rajasthan Royals</td>
+    </tr>
+    <tr>
+      <td>toss_decision</td>
+      <td>object</td>
+      <td>0</td>
+      <td>2</td>
+      <td>field, bat, bat</td>
+    </tr>
+    <tr>
+      <td>winner</td>
+      <td>object</td>
+      <td>5</td>
+      <td>19</td>
+      <td>Kolkata Knight Riders, Chennai Super Kings, Delhi Daredevils</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>object</td>
+      <td>0</td>
+      <td>4</td>
+      <td>runs, runs, wickets</td>
+    </tr>
+    <tr>
+      <td>result_margin</td>
+      <td>float64</td>
+      <td>19</td>
+      <td>98</td>
+      <td>140.0, 33.0, 9.0</td>
+    </tr>
+    <tr>
+      <td>target_runs</td>
+      <td>float64</td>
+      <td>3</td>
+      <td>170</td>
+      <td>223.0, 241.0, 130.0</td>
+    </tr>
+    <tr>
+      <td>target_overs</td>
+      <td>float64</td>
+      <td>3</td>
+      <td>15</td>
+      <td>20.0, 20.0, 20.0</td>
+    </tr>
+    <tr>
+      <td>super_over</td>
+      <td>object</td>
+      <td>0</td>
+      <td>2</td>
+      <td>N, N, N</td>
+    </tr>
+    <tr>
+      <td>method</td>
+      <td>object</td>
+      <td>1074</td>
+      <td>1</td>
+      <td>D/L, D/L, D/L</td>
+    </tr>
+    <tr>
+      <td>umpire1</td>
+      <td>object</td>
+      <td>0</td>
+      <td>62</td>
+      <td>Asad Rauf, MR Benson, Aleem Dar</td>
+    </tr>
+    <tr>
+      <td>umpire2</td>
+      <td>object</td>
+      <td>0</td>
+      <td>62</td>
+      <td>RE Koertzen, SL Shastri, GA Pratapkumar</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="section">
+    <h2>Missing values</h2>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>column</th>
+      <th>n_missing</th>
+      <th>pct_missing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>method</td>
+      <td>1074</td>
+      <td>98.08</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>51</td>
+      <td>4.66</td>
+    </tr>
+    <tr>
+      <td>result_margin</td>
+      <td>19</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <td>player_of_match</td>
+      <td>5</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>winner</td>
+      <td>5</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>target_runs</td>
+      <td>3</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>target_overs</td>
+      <td>3</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>season</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>venue</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>match_type</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>toss_decision</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>toss_winner</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>team2</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>team1</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>super_over</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>umpire1</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>umpire2</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+    <div><img src="images/missing_heatmap.png" alt="missing-heatmap"></div>
+  </div>
+
+  <div class="section">
+    <h2>Numeric column stats</h2>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+      <th>skew</th>
+      <th>kurtosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>id</th>
+      <td>1095.0</td>
+      <td>904828.319635</td>
+      <td>367740.242299</td>
+      <td>335982.0</td>
+      <td>548331.5</td>
+      <td>980961.0</td>
+      <td>1254062.5</td>
+      <td>1426312.0</td>
+      <td>-0.137667</td>
+      <td>-1.524986</td>
+    </tr>
+    <tr>
+      <th>result_margin</th>
+      <td>1076.0</td>
+      <td>17.259294</td>
+      <td>21.787444</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>20.0</td>
+      <td>146.0</td>
+      <td>2.567456</td>
+      <td>7.479122</td>
+    </tr>
+    <tr>
+      <th>target_runs</th>
+      <td>1092.0</td>
+      <td>165.684066</td>
+      <td>33.427048</td>
+      <td>43.0</td>
+      <td>146.0</td>
+      <td>166.0</td>
+      <td>187.0</td>
+      <td>288.0</td>
+      <td>-0.243483</td>
+      <td>1.018232</td>
+    </tr>
+    <tr>
+      <th>target_overs</th>
+      <td>1092.0</td>
+      <td>19.759341</td>
+      <td>1.581108</td>
+      <td>5.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>-7.155309</td>
+      <td>52.716896</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="section">
+    <h2>Categorical column top values</h2>
+    <h3>season</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>season</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2013</th>
+      <td>76</td>
+    </tr>
+    <tr>
+      <th>2022</th>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>2023</th>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>2024</th>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>2019</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>2016</th>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
+<h3>city</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>city</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mumbai</th>
+      <td>173</td>
+    </tr>
+    <tr>
+      <th>Kolkata</th>
+      <td>93</td>
+    </tr>
+    <tr>
+      <th>Delhi</th>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>Chennai</th>
+      <td>85</td>
+    </tr>
+    <tr>
+      <th>Hyderabad</th>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>Bangalore</th>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Chandigarh</th>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>Jaipur</th>
+      <td>57</td>
+    </tr>
+  </tbody>
+</table>
+<h3>date</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2008-04-26</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2008-04-27</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2024-05-12</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2024-04-07</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2008-05-17</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2008-05-18</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2008-05-21</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2008-05-24</th>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<h3>match_type</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>match_type</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>League</th>
+      <td>1029</td>
+    </tr>
+    <tr>
+      <th>Final</th>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>Qualifier 2</th>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>Qualifier 1</th>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>Eliminator</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>Semi Final</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>Elimination Final</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3rd Place Play-Off</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<h3>player_of_match</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>player_of_match</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AB de Villiers</th>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>CH Gayle</th>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>RG Sharma</th>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>DA Warner</th>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>V Kohli</th>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>MS Dhoni</th>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>RA Jadeja</th>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>YK Pathan</th>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+<h3>venue</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>venue</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Eden Gardens</th>
+      <td>77</td>
+    </tr>
+    <tr>
+      <th>Wankhede Stadium</th>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>M Chinnaswamy Stadium</th>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>Feroz Shah Kotla</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>Rajiv Gandhi International Stadium, Uppal</th>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>MA Chidambaram Stadium, Chepauk</th>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>Sawai Mansingh Stadium</th>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>Dubai International Cricket Stadium</th>
+      <td>46</td>
+    </tr>
+  </tbody>
+</table>
+<h3>team1</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>team1</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Royal Challengers Bangalore</th>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>Chennai Super Kings</th>
+      <td>128</td>
+    </tr>
+    <tr>
+      <th>Mumbai Indians</th>
+      <td>123</td>
+    </tr>
+    <tr>
+      <th>Kolkata Knight Riders</th>
+      <td>121</td>
+    </tr>
+    <tr>
+      <th>Rajasthan Royals</th>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>Kings XI Punjab</th>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>Sunrisers Hyderabad</th>
+      <td>86</td>
+    </tr>
+    <tr>
+      <th>Delhi Daredevils</th>
+      <td>85</td>
+    </tr>
+  </tbody>
+</table>
+<h3>team2</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>team2</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mumbai Indians</th>
+      <td>138</td>
+    </tr>
+    <tr>
+      <th>Kolkata Knight Riders</th>
+      <td>130</td>
+    </tr>
+    <tr>
+      <th>Rajasthan Royals</th>
+      <td>120</td>
+    </tr>
+    <tr>
+      <th>Chennai Super Kings</th>
+      <td>110</td>
+    </tr>
+    <tr>
+      <th>Royal Challengers Bangalore</th>
+      <td>105</td>
+    </tr>
+    <tr>
+      <th>Kings XI Punjab</th>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>Sunrisers Hyderabad</th>
+      <td>96</td>
+    </tr>
+    <tr>
+      <th>Delhi Daredevils</th>
+      <td>76</td>
+    </tr>
+  </tbody>
+</table>
+<h3>toss_winner</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>toss_winner</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mumbai Indians</th>
+      <td>143</td>
+    </tr>
+    <tr>
+      <th>Kolkata Knight Riders</th>
+      <td>122</td>
+    </tr>
+    <tr>
+      <th>Chennai Super Kings</th>
+      <td>122</td>
+    </tr>
+    <tr>
+      <th>Rajasthan Royals</th>
+      <td>120</td>
+    </tr>
+    <tr>
+      <th>Royal Challengers Bangalore</th>
+      <td>113</td>
+    </tr>
+    <tr>
+      <th>Sunrisers Hyderabad</th>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>Kings XI Punjab</th>
+      <td>85</td>
+    </tr>
+    <tr>
+      <th>Delhi Daredevils</th>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+<h3>toss_decision</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>toss_decision</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>field</th>
+      <td>704</td>
+    </tr>
+    <tr>
+      <th>bat</th>
+      <td>391</td>
+    </tr>
+  </tbody>
+</table>
+<h3>winner</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>winner</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mumbai Indians</th>
+      <td>144</td>
+    </tr>
+    <tr>
+      <th>Chennai Super Kings</th>
+      <td>138</td>
+    </tr>
+    <tr>
+      <th>Kolkata Knight Riders</th>
+      <td>131</td>
+    </tr>
+    <tr>
+      <th>Royal Challengers Bangalore</th>
+      <td>116</td>
+    </tr>
+    <tr>
+      <th>Rajasthan Royals</th>
+      <td>112</td>
+    </tr>
+    <tr>
+      <th>Kings XI Punjab</th>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>Sunrisers Hyderabad</th>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>Delhi Daredevils</th>
+      <td>67</td>
+    </tr>
+  </tbody>
+</table>
+<h3>result</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>result</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>wickets</th>
+      <td>578</td>
+    </tr>
+    <tr>
+      <th>runs</th>
+      <td>498</td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>no result</th>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+<h3>super_over</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>super_over</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>N</th>
+      <td>1081</td>
+    </tr>
+    <tr>
+      <th>Y</th>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+<h3>method</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>method</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NaN</th>
+      <td>1074</td>
+    </tr>
+    <tr>
+      <th>D/L</th>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+<h3>umpire1</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>umpire1</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AK Chaudhary</th>
+      <td>115</td>
+    </tr>
+    <tr>
+      <th>HDPK Dharmasena</th>
+      <td>79</td>
+    </tr>
+    <tr>
+      <th>KN Ananthapadmanabhan</th>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>CB Gaffaney</th>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>Asad Rauf</th>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>Nitin Menon</th>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>S Ravi</th>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>M Erasmus</th>
+      <td>42</td>
+    </tr>
+  </tbody>
+</table>
+<h3>umpire2</h3>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>umpire2</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>S Ravi</th>
+      <td>83</td>
+    </tr>
+    <tr>
+      <th>VK Sharma</th>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>C Shamshuddin</th>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>Nitin Menon</th>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>SJA Taufel</th>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>RJ Tucker</th>
+      <td>53</td>
+    </tr>
+    <tr>
+      <th>VA Kulkarni</th>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>CK Nandan</th>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="section">
+    <h2>Correlation (Pearson)</h2>
+    <div><img src="images/correlation_heatmap.png" alt="correlation-heatmap"></div>
+    <p><strong>Top correlated pairs:</strong></p>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>col1</th>
+      <th>col2</th>
+      <th>abs_pearson</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>result_margin</td>
+      <td>target_runs</td>
+      <td>0.395</td>
+    </tr>
+    <tr>
+      <td>target_runs</td>
+      <td>target_overs</td>
+      <td>0.352</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>target_runs</td>
+      <td>0.239</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>target_overs</td>
+      <td>0.046</td>
+    </tr>
+    <tr>
+      <td>result_margin</td>
+      <td>target_overs</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>result_margin</td>
+      <td>0.007</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="section">
+    <h2>Distributions & outliers</h2>
+    <div><h4>Pairwise scatter (top variance cols)</h4><img src="images/pairwise.png"></div>
+<div><h4>id — outliers (IQR): 0</h4><img src="images/dist_id.png"></div>
+<div><h4>result_margin — outliers (IQR): 121</h4><img src="images/dist_result_margin.png"></div>
+<div><h4>target_runs — outliers (IQR): 30</h4><img src="images/dist_target_runs.png"></div>
+<div><h4>target_overs — outliers (IQR): 30</h4><img src="images/dist_target_overs.png"></div>
+<div><h4>season — top categories</h4><img src="images/cat_season.png"></div>
+<div><h4>city — top categories</h4><img src="images/cat_city.png"></div>
+<div><h4>date — top categories</h4><img src="images/cat_date.png"></div>
+<div><h4>match_type — top categories</h4><img src="images/cat_match_type.png"></div>
+<div><h4>player_of_match — top categories</h4><img src="images/cat_player_of_match.png"></div>
+<div><h4>venue — top categories</h4><img src="images/cat_venue.png"></div>
+<div><h4>team1 — top categories</h4><img src="images/cat_team1.png"></div>
+<div><h4>team2 — top categories</h4><img src="images/cat_team2.png"></div>
+<div><h4>toss_winner — top categories</h4><img src="images/cat_toss_winner.png"></div>
+<div><h4>toss_decision — top categories</h4><img src="images/cat_toss_decision.png"></div>
+<div><h4>winner — top categories</h4><img src="images/cat_winner.png"></div>
+<div><h4>result — top categories</h4><img src="images/cat_result.png"></div>
+<div><h4>super_over — top categories</h4><img src="images/cat_super_over.png"></div>
+<div><h4>method — top categories</h4><img src="images/cat_method.png"></div>
+<div><h4>umpire1 — top categories</h4><img src="images/cat_umpire1.png"></div>
+<div><h4>umpire2 — top categories</h4><img src="images/cat_umpire2.png"></div>
+  </div>
+
+  <div class="section">
+    <h2>Suggestions</h2>
+    <ul>
+      <li>Some columns have >50% missing values — consider dropping or imputing them.</li>
+<li>2 numeric columns are highly skewed (|skew| > 1). Consider log/sqrt transform.</li>
+<li>Categorical columns with high cardinality: date, player_of_match. Consider encoding carefully.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

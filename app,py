@@ -1,0 +1,45 @@
+# streamlit_app.py
+import os
+import tempfile
+import streamlit as st
+import time
+import shutil
+from eda import generate_report
+
+st.set_page_config(page_title="AutoEDA Web", layout="wide")
+
+st.title("AutoEDA — upload CSV and get instant report")
+st.markdown("Upload a CSV and the tool will produce an HTML report with charts and suggestions.")
+
+uploaded = st.file_uploader("Choose a CSV file", type=["csv"])
+max_pairwise = st.slider("Max numeric columns in pairwise scatter", 2, 12, 6)
+
+if uploaded:
+    # Save uploaded file to temp location
+    with tempfile.TemporaryDirectory() as td:
+        input_path = os.path.join(td, uploaded.name)
+        with open(input_path, "wb") as f:
+            f.write(uploaded.getbuffer())
+
+        outdir = os.path.join(td, "report")
+        st.info("Generating report — this may take a few seconds.")
+        try:
+            report_path = generate_report(input_path, outdir=outdir, title=uploaded.name, max_pairwise=max_pairwise)
+        except Exception as e:
+            st.error(f"Report generation failed: {e}")
+            raise
+
+        # Read HTML and display inline
+        with open(report_path, "r", encoding="utf-8") as f:
+            html = f.read()
+
+        st.success("Report generated.")
+        st.markdown("### Preview")
+        # Streamlit cannot render JS/css of local images referenced by relative paths.
+        # We'll inline the HTML content and also provide a download link for the full folder as zip.
+        st.components.v1.html(html, height=800, scrolling=True)
+
+        # zip output folder for download
+        shutil.make_archive(os.path.join(td, "report_zip"), "zip", outdir)
+        with open(os.path.join(td, "report_zip.zip"), "rb") as fh:
+            st.download_button("Download full report (zip)", data=fh, file_name=f"{uploaded.name}_report.zip")
