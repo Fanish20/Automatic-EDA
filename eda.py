@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 autooda: simple automatic EDA tool
 Usage (CLI):
@@ -14,13 +14,10 @@ import argparse
 import warnings
 from datetime import datetime
 import math
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# NOTE: we purposely avoid seaborn to make matplotlib usage explicit.
-# If you want seaborn-style visuals, you can add seaborn later.
 
 warnings.filterwarnings("ignore")
 
